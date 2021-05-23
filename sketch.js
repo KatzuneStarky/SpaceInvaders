@@ -86,7 +86,7 @@ function preload(){
 	bgMusic = loadSound("src/bgM.wav");
 	playerImg = loadImage("img/nave.png");
 	alienImg = loadImage("img/alien.png");
-	gamefont = loadFont("fuente/fuente.ttf");
+	//gamefont = loadFont("fuente/fuente.ttf");
 	deathAlien = loadSound("src/explosion.wav");
 	shootSound = loadSound("src/shoot.wav");
 	flechaImg = loadImage("img/flechas.png");
@@ -144,21 +144,21 @@ function splash(){
 
 	fill(0, 255, 0);
 	textSize(40);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("SPACE INVADERS", width/2, 100);
 	textSize(15);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("UNIVERSIDAD AUTONOMA DE BAJA CALIFORNIA SUR", width/2, 130);
 	textSize(30);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("COMO JUGAR", width/2, 180);
 	textSize(15);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("USA LAS FLECHAS 'IZQUIERDA'", width/2, 215);
 	text("Y 'DERECHA' PARA MOVER A TU PERSONAJE", width/2, 240);
 	image(flechaImg, width/3, 260, 200, 100);
 	textSize(15);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("USA LA TECLA 'S' PARA DISPARAR", width/2, 400);
 	text("HAZ CLICK EN LA PANTALLA PARA INCIAR", width/2, 430);
 
@@ -176,10 +176,10 @@ function win(){
 
 	fill(0, 255, 0);
 	textSize(40);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("GANASTE", width/2, 250);
 	textSize(15);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("RECARGA LA PAGINA PARA VOLVER A JUGAR", width/2, 280);
 }
 
@@ -195,13 +195,13 @@ function lose(){
 
 	fill("#fff");
 	textSize(40);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("PERDISTE", width/2, 250);
 	text("SOBREVIVISTE: ", width/2, 350);
 	text(gameTime, width/2-150, 400);
 	text("SEGUNDOS", width/2+40, 400);
 	textSize(15);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("RECARGA LA PAGINA PARA VOLVER A JUGAR", width/2, 280);
 }
 
@@ -248,19 +248,19 @@ function game() {
 
 	fill(0);	
 	textSize(25);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("Vidas: ", 290, 35);
 	text(lives, 350, 35);
 
 	fill(0);	
 	textSize(25);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("Puntos: ", 80, 35);
 	text(score, 170, 35);
 
 	fill(0);	
 	textSize(25);
-	textFont(gamefont);
+	//textFont(gamefont);
 	text("Tiempo: ", 490, 35);
 	text(timeLimit - gameTime, 570, 35);
 
