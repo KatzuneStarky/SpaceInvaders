@@ -281,7 +281,7 @@ function game() {
 
 function boss(){
 	image(bossImage, b1x, b1y, b1Width, b1Height);
-	textFont(gamefont);
+	//textFont(gamefont);
 	textSize(20);
 	fill("#fff");
 	text(bossLife, b1x+50, b1y-20);
